@@ -330,7 +330,7 @@ filter: hue-rotate(20deg);
 
 .button__image {
   width: clamp(1.3125rem, 1.904rem + -0.6573vw, 1.75rem);
-  fill: #000;
+  fill: var(--button-image-color);
   mix-blend-mode: difference;
 }
 
