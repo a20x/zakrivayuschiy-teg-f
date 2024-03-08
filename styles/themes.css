@@ -6,8 +6,8 @@
 */
 
 :root.theme-light {
-  --accent-font-family: 'Inter';
-  --main-font-family: 'PressStart2P';
+  --accent-font-family: 'Inter', sans-serif;
+  --main-font-family: 'PressStart2P', sans-serif;
   --bold-font-weight: 700;
   --regular-font-weight: 400;
   --background-color: #fff;
@@ -18,12 +18,16 @@
   --text-color: #000;
   --content-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   --card__image-text-shadow: #fff;
-  --button-background-color: #fff;
+  --button-background-color: #000;
   --button-text-color: #fff;
+  --button-image-color: #fff;
   --heart-contour-color: #000;
-  --heart-sparks-color: #FF0000;
-  --heart-main-body-color: #FF0000;
-  --heart-core-color: #FFFFFF;
+}
+
+@media (width < 375px) {
+  :root.theme-light {
+    --content-width: 100%;
+  }
 }
 
 :root.theme-dark {
@@ -39,10 +43,14 @@
   --card__image-text-shadow: #000;
   --button-background-color: #00CC14;
   --button-text-color: #00CC14;
+  --button-image-color: #fff;
   --heart-contour-color: #00CC14;
-  --heart-sparks-color: #FF0000;
-  --heart-main-body-color: #FF0000;
-  --heart-core-color: #FFFFFF;
+}
+
+@media (width < 375px) {
+  :root.theme-dark {
+    --content-width: 100%;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,9 +67,13 @@
     --card__image-text-shadow: #000;
     --button-background-color: #00CC14;
     --button-text-color: #00CC14;
+    --button-image-color: #000;
     --heart-contour-color: #00CC14;
-    --heart-sparks-color: #FF0000;
-    --heart-main-body-color: #FF0000;
-    --heart-core-color: #FFFFFF;
+  }
+}
+
+@media (width < 375px) and (prefers-color-scheme: dark) {
+  :root {
+    --content-width: 100%;
   }
 }
