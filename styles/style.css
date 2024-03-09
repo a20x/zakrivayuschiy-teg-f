@@ -328,9 +328,9 @@ filter: hue-rotate(20deg);
   }
 }
 
-.button__image {
+.button__icon {
   width: clamp(1.3125rem, 1.904rem + -0.6573vw, 1.75rem);
-  fill: var(--button-image-color);
+  color: var(--button-image-color);
   mix-blend-mode: difference;
 }
 
