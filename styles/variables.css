@@ -17,6 +17,7 @@
   --button-text-color: #fff;
   --button-image-color: #fff;
   --heart-contour-color: #000;
+  --heart-color: #ff0000;
 }
 
 @media (width < 375px) {
