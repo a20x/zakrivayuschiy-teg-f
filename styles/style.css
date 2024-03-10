@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-inline-size: 320px;
+  min-inline-size: 375px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family);
   font-variation-settings: "wght" var(--regular-font-weight);
@@ -60,12 +60,6 @@
   font-weight: 400;
   text-transform: uppercase;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-}
-
-@media (width < 375px) {
-  .header__logo {
-    width: 100%;
-  }
 }
 
 .header__title {
