@@ -20,8 +20,8 @@
   --heart-color: #ff0000;
 }
 
-@media (width < 375px) {
+@media (width <= 375px) {
   :root {
-    --content-width: 100%;
+    --content-width: 100vw;
   }
 }
